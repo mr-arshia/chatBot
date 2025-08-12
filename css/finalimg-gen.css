@@ -1,0 +1,682 @@
+.body{
+    background-color: #0D0E0E;
+    
+}
+
+@font-face {
+    font-family: iransans-light;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/1-IranSansWeb/IRANSansWeb_Light.eot");
+    src: url("../fonts/1-IranSansWeb/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/1-IranSansWeb/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/1-IranSansWeb/IRANSansWeb_Light.woff") format("woff"), url("../fonts/1-IranSansWeb/IRANSansWeb_Light.ttf") format("truetype"
+      );
+}
+
+.query-body{
+    display: flex;
+    min-height: 100dvh;
+    background: linear-gradient(110deg, rgb(2, 3, 5) 2%, rgb(7, 10, 15));
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #16181E;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.token{
+    width: 40%;
+    height: auto;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-badge {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #555454;
+    border-radius: 25px;
+    padding: 1px;
+    padding-bottom: 1px;
+    
+}
+
+.author-badge button {
+    margin: 0 !important;
+    max-width: 60px !important;
+    padding: 0 !important;
+    display: flex;
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);
+    border: none;
+}
+.author-badge button a {
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+}
+.author-badge button:hover {
+    transition: all 0.1s ease-in;
+    box-shadow: 0 0 15px rgba(145, 72, 180, 0.75) !important;
+}
+
+.token-price{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+.token-price span {
+    font-size: 10px;
+}
+
+.span6{
+    font-size: 15px;
+}
+.back{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
+
+.back-icon a{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.css-o79bn0 {
+    width: calc(2.6rem);
+    height: calc(3rem);
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    vertical-align: middle;
+    fill: none;
+    opacity: 0.5;
+    transition: 0.375s;
+
+}
+
+.css-o79bn0:hover{
+    color: #B14BF4;
+    opacity: 1;
+}
+
+.rbt-sm-separator{
+    margin: 0 !important;
+}
+.querybox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(110deg, rgb(2, 3, 5) 2%, rgb(7, 10, 15));
+    /* border: 1px solid rgb(173, 99, 247); */
+    border-radius: 12px;
+    margin-top: 20px; 
+}
+
+.query-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.query-aside{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.form-gen{
+    position: relative;
+    font-size: 12px;
+    width: 100%; /* تغییر عرض به 100% */
+    display: flex;
+    justify-content: center; /* قرار دادن در وسط */
+    align-items: center; /* قرار دادن در وسط */
+}
+.textare{
+    width: 100%;
+    height: 70px; /* تنظیم ارتفاع مورد نظر */
+    resize: none; 
+    overflow: hidden; /* برداشتن اسکرول */
+    background-color: #16181E;
+    border: 1px solid #16181E;
+    padding: 20px 20px 20px 120px; /* ایجاد فضای کافی برای دکمه */
+    line-height: 1.4; /* کاهش فاصله بین خطوط */
+    font-size: 14px;
+}
+
+.buton{
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 10px; 
+    top: 10px;
+    border-radius: 12px;
+    z-index: 1; 
+    width: 100px; 
+    height: 50px; 
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);
+    border: none;
+    outline: none !important; /* حذف حاله پیش‌فرض */
+    box-shadow: none !important;
+}
+
+.buton:hover{
+    box-shadow: 0 0 15px rgba(145, 72, 180, 0.75) !important;
+    transition: all 0.1s ease-in;
+}
+.buton:focus {
+    outline: none !important; /* حذف حاله پیش‌فرض */
+    box-shadow: 0 0 0 4px rgba(162, 74, 249, 0.5) !important; /* اضافه کردن حاله سفارشی */
+}
+
+
+.imgbox1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+    margin-top: 10px;
+}
+.imgbox2{
+    background: linear-gradient(110deg, rgb(2, 3, 5) 2%, rgb(7, 10, 15));
+    /* float: left; */
+    display: inline-block;
+    height: auto;
+    /* margin: 1%; */
+    width: 50%;
+    text-align: center;
+    /* padding: 20px 0; */
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox2 img {
+    object-fit: cover; /* عکس رو به خوبی تو کانتینر جا می‌ده */
+
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 10px; /* فاصله بین آیکون‌ها */
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0; /* اول overlay مخفی‌ست */
+    transition: 0.25s; /* انیمیشن برای opacity */
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* هاور روی کانتینر */
+
+.imgbox2:hover .icon-container {
+    opacity: 1; /* overlay ظاهر می‌شه */
+    transition: 0.25s;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7), /* تیره‌ترین قسمت بالا */
+    rgba(0, 0, 0, 0.1), /* وسط عکس (روشن‌تر) */
+    rgba(0, 0, 0, 0.7)  /* تیره‌ترین قسمت پایین */
+  );
+}
+
+.icon-button {
+    background: rgba(46, 46, 46, 0.5); /* رنگ سیاه با شفافیت 50% */
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 15px; /* اندازه آیکون */
+    color: rgb(133, 143, 143);
+    transition: color 0.6s ease;
+    transition:  box-shadow 0.6s ease;
+    transition:  transform 0.6s ease;
+
+}
+
+.icon-button:focus {
+    outline: none;
+}
+
+.icon-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px 6px rgba(156, 102, 206, 0.3);
+    color: rgb(156, 102, 206);
+    transition: 0.1s;
+    filter: none;
+    backdrop-filter: blur(calc(0.125rem));
+    background: linear-gradient(81.02deg, rgba(250, 85, 96, 0.08) -23.47%, rgba(177, 75, 244, 0.08) 45.52%, rgba(77, 145, 255, 0.08) 114.8%);
+}
+
+/* استایل مدال */
+.modal {
+    display: none; /* اول مدال مخفی‌ست */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* پس‌زمینه تیره */
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease; /* انیمیشن ظاهر شدن */
+}
+
+
+/* انیمیشن ظاهر شدن مدال */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/* محتوای مدال (عکس بزرگ‌شده) */
+.modal-content {
+    max-width: 80%; /* حداکثر عرض عکس */
+    max-height: 80vh; /* حداکثر ارتفاع عکس */
+    width: auto;
+    height: auto;
+    border-radius: 10px; /* لبه‌های گرد */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* سایه */
+    animation: zoomIn 0.3s ease; /* انیمیشن بزرگ‌شدن عکس */
+}
+
+/* انیمیشن بزرگ‌شدن عکس */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* دکمه بستن مدال */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px; /* اندازه دکمه */
+    height: 40px;
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);
+    color: #fff; /* رنگ آیکون */
+    border: none;
+    border-radius: 50%; /* گرد کردن دکمه */
+    font-size: 24px; /* اندازه آیکون */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* سایه */
+    transition: all 0.3s ease; /* انیمیشن برای hover */
+}
+
+.close:hover {
+    box-shadow: 0 0 15px rgba(145, 72, 180, 0.75) !important;
+    transition: all 0.1s ease-in;
+}
+
+
+.infobox{
+    width: 100%;
+    height: auto;
+    background-color: #060606;
+    border-radius: 12px;
+    border: 1px solid rgb(156, 102, 206);
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buton-upgrade{
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 12px;
+    z-index: 1; 
+    width: 100px; 
+    height: 40px; 
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);
+    border: none;
+    outline: none !important; /* حذف حاله پیش‌فرض */
+    box-shadow: none !important;
+}
+
+.buton-upgrade:hover{
+    box-shadow: 0 0 15px rgba(145, 72, 180, 0.75) !important;
+    transition: all 0.1s ease-in;
+}
+
+.side-panel{
+    width: 100%;
+    height: auto;
+    margin-top: 0 !important;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #16181E;
+}
+
+
+/* استایل بخش‌های سایدبار */
+.prompts-section, .dimensions-section {
+    margin-bottom: 30px;
+}
+
+.prompts-section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* عنوان بخش‌ها */
+.side-panel h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* لیست پرامپت‌ها */
+.prompts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0; /* اول لیست مخفی‌ست */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.prompts-list.open {
+    max-height: 200px; /* ارتفاع لیست موقع باز شدن */
+}
+
+.prompts-list li {
+    margin-bottom: 10px;
+
+}
+
+/* دکمه‌های پرامپت و سایز */
+.prompt-btn, .dimension-btn {
+    width: 100%;
+    padding: 10px;
+    background: #10151f;
+    border: 1px solid #282c42;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #9094a6;
+}
+.prompt-btn {
+    white-space: nowrap; /* جلوگیری از شکستن خط */
+    overflow: hidden; /* مخفی کردن متن اضافی */
+    text-overflow: ellipsis; /* نمایش سه نقطه در انتهای متن */
+}
+
+.prompt-btn:hover, .dimension-btn:hover {
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);; /* تغییر رنگ پس‌زمینه */
+    color: #fff; /* تغییر رنگ متن */
+    border-color: #B14BF4;
+}
+
+/* دکمه باز و بسته کردن دروپ‌داون */
+.dropdown-toggle {
+    width: 100%;
+    padding: 10px;
+    background: #0D0E0E; /* رنگ پس‌زمینه */
+    color: #fff; /* رنگ متن */
+    border: 1px solid #7130c3;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+
+  
+  .dropdown-toggle:hover {
+    background: #B14BF4; /* تغییر رنگ پس‌زمینه موقع hover */
+  }
+
+/* دکمه‌های سایز */
+.dimensions-buttons {
+    display: flex;
+    gap: 10px; /* فاصله بین دکمه‌ها */
+}
+
+.dimension-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dimension-btn p {
+    margin: 0;
+    font-size: small;
+    line-height: 1 ;
+    font-weight: var(--p-regular);
+    padding-top: 8px;
+}
+
+.size-icon-1{
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: #9094a6;
+    border-style: solid;
+    width: 1.85rem;
+    height: 1.85rem;
+    background-color: #1c212a
+}
+.size-icon-2{
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: #9094a6;
+    border-style: solid;
+    width: 1.2rem;
+    height: 1.85rem;
+    background-color: #1c212a
+}
+.size-icon-3{
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: #9094a6;
+    border-style: solid;
+    width: 1.99rem;
+    height: 1.2rem;
+    background-color: #1c212a
+}
+
+.image-count-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+.image-count-section h3{
+    margin: 0;
+}
+  
+  .count-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .count-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .count-btn {
+    width: 100%;
+    padding: 10px;
+    background: #10151f;
+    border: 1px solid #282c42;
+    border-radius: 5px;
+    color: #9094a6;
+
+    flex: 1; /* دکمه‌ها به‌طور مساوی فضا رو تقسیم می‌کنن */
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease; /* انیمیشن برای hover و active */
+  }
+
+.count-btn:hover {
+    background: linear-gradient(123deg, #CE38CF 0.01%, #7130c3 49.90%, #B14BF4 100%);; /* تغییر رنگ پس‌زمینه */
+    color: #fff; /* تغییر رنگ متن */
+    border-color: #B14BF4;
+}
+
+.count-btn.active {
+    background: #B14BF4; /* رنگ پس‌زمینه برای دکمه فعال */
+    color: #fff;
+    border-color: #B14BF4;
+}
+.side-panel hr {
+    margin-top: 23px;
+}
+.side-panel .logo-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 100px;
+}
+
+.history-section{
+    text-align: center;
+}
+
+@media only screen and (max-width:767px){
+    .token{
+        width: auto;
+    }
+    .span6{
+        display: none;
+    }
+    .buton{
+        width: auto;
+        margin-right: 75%;
+        font-size: 10px;
+        padding: 8px;
+        margin-top: 4%;
+    }
+    .form-gen{
+        font-size: 8px;
+    }
+   .back{
+    width: 60%;
+   }
+   .querybox{
+    width: 100%;
+   }
+   .imgbox1{
+    width: auto;
+    margin-top: 6%;
+   }
+   .icon-button{
+    font-size: 15px;
+    color: rgb(156, 102, 206);
+    padding: 6px;
+   }
+   .icon-container{
+    gap: 2px;
+    margin-right: 80%;
+   }
+   .infobox{
+    width: 97%;
+    margin-top: 6%;
+   }
+   .p-info{
+    font-size: 12px;
+   }
+   .textare{
+    font-size: 12px;
+   }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .token{
+        width: 70%;
+    }
+    .buton{
+        width: 15%;
+        margin-right: 84%;
+        font-size: 10px;
+        padding: 8px;
+        margin-top: 2%;
+    }
+    .imgbox1{
+        width: 40%;
+        margin-top: 1%;
+       }
+    .infobox{
+        width: 80%;
+        margin-top: 1%;
+       }
+    .p-info{
+        font-size: 12px;
+       }
+       .textare{
+        font-size: 12px;
+       }
+}

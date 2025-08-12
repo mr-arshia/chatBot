@@ -1,0 +1,60 @@
+.h3-desc{
+    text-align: center;
+    font-size: 25px;
+}
+.main-desc{
+    background-color: #16181E;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-radius: 12px;
+    align-items: center;
+    
+}
+
+.h3-desc2 , .p-description{
+    text-align: right !important;
+    margin-right: 32px;
+}
+.ul-desc{
+    text-align: right;
+    margin-right: 32px;
+
+}
+.p-text-test{
+    text-align: right;
+    font-size: 18px;
+
+}
+.li-text-test{
+    font-size: 10px;
+}
+.btn-desc{
+    margin-right: 10px;
+}
+
+
+@media (max-width:767px) {
+    .main-desc{
+        width: 90%;
+    }
+    .h3-desc{
+        font-size: 16px;
+    }
+    .btn-desc{
+        font-size: 12px;
+    }
+    
+}
+@media  only screen and (min-width:768px) and (max-width:991px){
+    .main-desc{
+        width: 90%;
+    }
+    .h3-desc{
+        font-size: 16px;
+    }
+    .btn-desc{
+        font-size: 12px;
+    }
+    
+}

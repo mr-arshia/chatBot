@@ -1,0 +1,99 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+}
+.preview-area {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px dashed #555454;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-area img {
+    max-width: 100%;
+    max-height: 400px; /* افزایش ارتفاع عکس */
+    border-radius: 5px;
+}
+
+.upload-area {
+    display: flex;
+    justify-content: space-between;
+}
+.upload-area1{
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #555454;
+    border-radius: 4px;
+    width: 79%;
+    /* display: none; */
+}
+.btn-chekide{
+    margin-top: 2%;
+    margin-right: 83%;
+}
+.mobobtn{
+    display: none;
+}
+.summery{
+    width: 100%;
+    border: 1px solid #555454;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    margin-top: 10%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 1px 1px 4px 0px rgba(191, 100, 224, 0.5);;
+}
+.infobox1{
+    width: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(144, 103, 183);
+    margin-top: 5%;
+    padding: 10px;
+}
+@media only screen and (max-width:767px){
+    .preview-area{
+        min-height: 350px;
+    }
+    .upload-area{
+        display:none;
+    }
+    .mobobtn{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: 35px;
+        margin-top: 5%;
+        box-shadow: 2px 2px 7px 0px rgba(101, 213, 126, 0.5);
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .upload-area{
+        display: none;
+    }
+    .mobobtn{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: 40px;
+        margin-top: 3%;
+        box-shadow: 2px 2px 7px 0px rgba(101, 213, 126, 0.5);
+    }
+}
